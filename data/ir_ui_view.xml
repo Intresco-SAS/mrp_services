@@ -15,6 +15,7 @@
                 <field name="x_to_consume" attrs="{'readonly':['|',('x_quantity','!=',0.0),('parent.state','in',['progress','to_close','done','cancel'])]}"/>
                 <field name="x_quantity" attrs="{'column_invisible': [('parent.state','in',['draft'])], 'readonly':[('parent.state','not in',['confirmed','progress'])]}"/>
                 <field name="x_uom"/>
+                <field name="x_process_done" attrs="{'column_invisible': [('parent.state','in',['draft'])], 'readonly':[('parent.state','not in',['confirmed','progress'])]}"/>
                 <field name="x_burden" invisible="1"/>
               </tree>
             </field>

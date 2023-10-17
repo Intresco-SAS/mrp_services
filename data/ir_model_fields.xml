@@ -8,6 +8,14 @@
     <field name="name">x_name</field>
     <field name="ttype">char</field>
   </record>
+  <record id="mrp_services.imf_xms_x_services_process_done" model="ir.model.fields" context="{'studio': True}">
+    <field name="copied" eval="False"/>
+    <field name="field_description">Proceso Finalizado</field>
+    <field name="model">x_mrp_services</field>
+    <field name="model_id" ref="mrp_services.ir_model_x_mrp_services"/>
+    <field name="name">x_process_done</field>
+    <field name="ttype">boolean</field>
+  </record>
   <record id="mrp_services.imf_xms_x_product_id" model="ir.model.fields" context="{'studio': True}">
     <field name="complete_name" eval="False"/>
     <field name="compute" eval="False"/>
